@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	MiniBio
+</title>
+<style>
+	body {
+		background-color: black;	
+	}
+	.wrapper{
+		color: #FFC0CB;
+		font-family: Courier, monospace;
+		font-size: 22px;
+		padding:1em;
+		display:grid;
+		grid-template-columns: 30% 50%;
+		grid-gap: 1em;
+	}
+
+	
+	span:before{
+		color:black;
+		background-color:red;
+		content:"";
+		animation: animate infinite 4s;
+	}
+	@keyframes animate{
+	
+		25%{
+			background-color:blue;
+			content:"a team";
+		}
+		50%{
+			background-color:yellow;
+			animation: type 1s;
+			content:"programmers ";
+		}
+		75%{
+			background-color:green;
+			animation: type 1s;
+			content:"designers";
+		}
+		100%{
+			background-color:grey;
+			content:"  hard working ";
+		}
+	}
+
+	.wrapper1{
+		display:flex;
+		display:flex;
+		
+	}
+	button{
+		align-self: flex-end;
+		border: none;
+		width:150px;
+		height:30px;
+		background-color: #FFC0CB;
+		animation: none;
+		box-shadow: none;
+	}
+	button:hover{
+		animation: lightUP infinite 4s;
+	}
+	@keyframes lightUP{
+		0%{
+			box-shadow:#FF1493;
+			background-color:5px 5px 20px #FF1493;
+		}
+		50%{
+			box-shadow:#FF69B4;
+			background-color: 5px 5px 20px #FF69B4;
+		}
+		100%{
+			box-shadow:#FF1493;
+			background-color:5px 5px 20px #FF1493;
+		}
+		
+	}
+	
+a:link {
+  text-decoration: none;
+}
+a:visited{
+	color:black;
+	
+}
+</style>
+</head>
+<body>
+	
+		
+		<div class="wrapper">
+		<div style="color:#FFC0CB;font-family: Courier, monospace;">Hello, we are  <span></span></div>
+		<div></div>
+		<div class="wrapper2">
+				<img src="us.jpg" alt="self"  style="margin-left:10%;width:60%;height:50%;border: 2px solid white;box-shadow:5px 5px 20px black;" >
+		</div>
+		<div class="wrapper3">
+				<p>We are really passionate about designing and creating simple websites from scratch!Are you ready to join us in this journey?</p>
+				<br>
+				<button><b><a href="https://www.fiverr.com/">I am ready</a></b></button>
+				<button><b>More Info</b></button>
+		</div>
+	</div>
+
+</body>
+</html>
